@@ -1,0 +1,284 @@
+
+#contact{
+    margin: 5rem 0;
+}
+
+.contact__container{
+    height: 90vh;
+    background: var(--color-bg2);
+    padding: 3rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    text-align: start;
+    gap: 3rem;
+}
+
+.aside{
+    background-color: var(--color-bg);
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+
+.aside__img img{
+    width: 10rem;
+}
+
+.aside h3{
+    text-align: start;
+    margin: 1.2rem 0 0.4rem;
+
+}
+
+.aside p{
+    padding: 0.5rem 0 0.9rem;
+    color: var(--color-light);
+}
+
+.aside__links li a{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact__social-links{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__social-links li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__social-links li a{
+    background-color: var(--color-bg2);
+    border-radius: 50%;
+    /* padding: 0.3rem; */
+    font-size: .9rem;
+    
+}
+
+/*========== FORM ===========*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+    /* margin-right: 2rem; */
+}
+
+form .name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+input,textarea{
+    padding: .4rem;
+    background-color: var(--color-bg);
+    font: inherit;
+    color: var(--color-white);
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--color-light);
+    font: inherit;
+}
+
+form button{
+    width: max-content;
+    font: inherit;
+    cursor: pointer;
+}
+
+
+
+/*=====+===== MEDIA QUERY (TABLET) ======+=====*/
+
+@media screen and (max-width: 1024px){
+
+    
+    h1,h2,h3,h4,h5{
+        line-height: 1.1;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.7rem;
+    }
+    
+    h3{
+        font-size: 1.4rem;
+    }
+    
+    h4{
+        font-size: .9rem;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: var(--container-width-md);
+    }
+    
+
+    .contact__container{
+        height: fit-content;
+        background: var(--color-bg2);
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+   
+    
+    .aside{
+        height: fit-content;
+        border-radius: 2rem;
+        padding: 2rem;
+        align-self: center;
+        background-color: var(--color-bg);
+
+    }
+    
+    .aside__img img{
+        width: 8rem;
+    }
+
+    .aside p{
+        text-align: start;
+    }
+
+
+
+    /*=====+===== FORM =====+======*/
+
+    form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: center;
+    margin-right: 2rem;
+    width: 100%;
+    }
+
+    form .name{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1.5rem;
+    }
+
+    input,textarea{
+    padding: .4rem;
+    background-color: var(--color-bg);
+    font: inherit;
+    color: var(--color-white);   
+    }
+    
+
+
+}
+
+/*=====+===== MEDIA QUERY (SMALL DEVICES) ======+=====*/
+
+@media screen and (max-width: 600px){
+
+
+    h1,h2,h3,h4,h5{
+        line-height: 1;
+    }
+    
+    h1{
+        font-size: 1.8rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+    
+    h4{
+        font-size: .8rem;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: var(--container-width-sm);
+    }
+
+
+    #contact{
+        margin: 1rem 0;
+    }
+    
+    .contact__container{
+        height: fit-content;
+        background: var(--color-bg2);
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+   
+    
+    .aside{
+        height: fit-content;
+        border-radius: 2rem;
+        padding: 2rem;
+        align-self: center;
+        background-color: var(--color-bg);
+
+    }
+    
+    .aside__img img{
+        width: 8rem;
+    }
+
+    .aside p{
+        text-align: start;
+    }
+ 
+
+    
+    /*=====+++===== FORM =====+++======*/
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-self: center;
+        margin-right: 2rem;
+        }
+    
+        form .name{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1.5rem;
+        }
+    
+        input,textarea{
+        padding: .4rem;
+        background-color: var(--color-bg2);
+        font: inherit;
+        color: var(--color-white);   
+     }
+    
+
+
+}
